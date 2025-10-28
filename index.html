@@ -10,12 +10,40 @@
 
     <title>KW-Plan-Manager</title>
     <style>
-        /* CSS Code */
+        .container {
+            width: 640px;
+        }
     </style>
 </head>
 
 <body>
     <!-- HTML Code -->
+    <nav class="navbar bg-body-tertiary">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1">KW-Plan-Manager</span>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Plan</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter a plan here">
+            <button type="button" class="btn btn-primary">Add</button>
+        </div>
+
+        <div>
+            <h3>Plans</h3>
+            <div id="plan-list">
+                <div class="plan">Sample plan</div>
+            </div>
+        </div>
+
+        <div>
+            <h3>Done</h3>
+            <div id="done-list">
+
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
